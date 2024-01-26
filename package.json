@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint:lint-staged": "lint-staged"
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "lint-staged": "^15.2.0"
+    "husky": "^9.0.6",
+    "lint-staged": "^15.2.0",
+    "prettier": "3.2.4"
+  },
+  "lint-staged": {
+    "*.js": "prettier --write"
   }
 }
