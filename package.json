@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint:prettier": "prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,6 @@
     "prettier": "3.2.4"
   },
   "lint-staged": {
-    "*.{js,ts,md,json,css,scss}": "prettier --write"
+    "*.{js,ts,md,json,css,scss,vue}": "prettier --write"
   }
 }
